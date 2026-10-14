@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Menor preço – Geladeira B= Smart Brastemp 500 L</title>
+<style>
+:root{--bg:#f5f6f8;--card:#fff;--tx:#14181f;--mut:#5d6675;--bd:#e0e4ea;--ac:#0b6bcb;--ok:#0a8f4e;--okbg:#e3f6ec;--wr:#8a5a00;--wrbg:#fff2d6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1116;--card:#171b22;--tx:#e8ecf2;--mut:#9aa4b2;--bd:#2a313c;--ac:#5aa9ff;--ok:#4fd18b;--okbg:#10301f;--wr:#ffc857;--wrbg:#332708;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1116;--card:#171b22;--tx:#e8ecf2;--mut:#9aa4b2;--bd:#2a313c;--ac:#5aa9ff;--ok:#4fd18b;--okbg:#10301f;--wr:#ffc857;--wrbg:#332708;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.w{max-width:860px;margin:0 auto;padding:16px}
+header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+h1{font-size:1.25rem;margin:0 0 4px}
+.sub{color:var(--mut);font-size:.9rem;margin:0}
+button,.btn{font:inherit;cursor:pointer;border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:8px 12px;border-radius:10px;text-decoration:none;display:inline-block}
+button:hover,.btn:hover{border-color:var(--ac)}
+.pri{background:var(--ac);color:#fff;border-color:var(--ac)}
+.status{display:flex;align-items:center;gap:8px;margin:14px 0;padding:10px 12px;background:var(--card);border:1px solid var(--bd);border-radius:12px;font-size:.9rem;flex-wrap:wrap}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--ok);animation:p 1.6s infinite}
+@keyframes p{50%{opacity:.3}}
+.best{background:var(--okbg);border:1px solid var(--ok);border-radius:14px;padding:14px;margin-bottom:14px}
+.best .pr{font-size:2rem;font-weight:700;color:var(--ok)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.tabs button[aria-pressed="true"]{background:var(--ac);color:#fff;border-color:var(--ac)}
+label.o{display:flex;align-items:center;gap:6px;color:var(--mut);font-size:.9rem;margin-left:auto}
+.row{display:grid;grid-template-columns:1fr auto;gap:6px 12px;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px;margin-bottom:8px}
+.row .p{font-weight:700;font-size:1.15rem;text-align:right}
+.tag{font-size:.75rem;padding:2px 8px;border-radius:99px;background:var(--bd);color:var(--mut);margin-right:4px}
+.tag.w2{background:var(--wrbg);color:var(--wr)}
+.m{color:var(--mut);font-size:.85rem}
+a{color:var(--ac)}
+.srch{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+small.n{display:block;color:var(--mut);margin-top:16px}
+</style>
+</head>
+<body>
+<div class="w">
+<header>
+  <div>
+    <h1>Geladeira B= Smart Brastemp Frost Free Inverse 500 L</h1>
+    <p class="sub">Inox (BRE66AK) e Black Inox (BRE66AE) · comparador de menor preço</p>
+  </div>
+  <button id="th" aria-label="Alternar modo escuro">🌙 Escuro</button>
+</header>
+
+<div class="status">
+  <span class="dot"></span>
+  <span>Preços verificados há <b id="age">…</b></span>
+  <span class="m">· próxima checagem sugerida em <b id="next">…</b></span>
+</div>
+
+<div class="srch">
+  <a class="btn pri" id="g1" target="_blank" rel="noopener">🔎 Buscar no Google Shopping (Inox)</a>
+  <a class="btn" id="g2" target="_blank" rel="noopener">🔎 Google Shopping (Black Inox)</a>
+</div>
+
+<div class="best" id="best"></div>
+
+<div class="tabs">
+  <button data-f="all" aria-pressed="true">Todos</button>
+  <button data-f="inox" aria-pressed="false">Inox</button>
+  <button data-f="black" aria-pressed="false">Black Inox</button>
+  <label class="o"><input type="checkbox" id="out" checked> incluir outlet / CNPJ</label>
+</div>
+
+<div id="list"></div>
+
+<small class="n">Preços são o valor à vista/Pix ou o menor preço exibido na página da loja no momento da verificação, e mudam com frequência. Confirme voltagem, frete e estoque na loja antes de comprar. Itens “Outlet” podem ter pequenas avarias de embalagem; “CNPJ” exige compra como empresa.</small>
+</div>
+
+<script>
+// Snapshot verificado em 14/10/2026 (pesquisa na web). Atualize CHECKED e DATA ao republicar.
+var CHECKED = new Date("2026-10-14T12:00:00-03:00").getTime();
+var DATA = [
+ {s:"Compra Certa (Outlet)",c:"inox",p:3825.60,t:"Pix · BRE66AK_OUT",o:1,u:"https://www.compracerta.com.br/geladeira-inteligente-b--smart-brastemp-frost-free-inverse-500-litros-cor-inox-outlet-bre66ak-out-20128655/p"},
+ {s:"Amazon",c:"inox",p:3999.00,t:"BRE66AK · bivolt · até 12x sem juros",u:"https://www.amazon.com.br/Geladeira-Inteligente-BRE66AK-Litros-Brastemp/dp/B0GL3B4FZ8"},
+ {s:"Whirlpool Compra Direta (CNPJ)",c:"inox",p:4376.83,t:"Pix · venda para empresas",o:1,u:"https://www.compradiretaempresas.com.br/geladeira-inteligente-b--smart-brastemp-frost-free-inverse-500-litros-cor-inox-bre66ak-2112/p"},
+ {s:"Amazon",c:"black",p:4519.00,t:"BRE66AE · menor oferta listada",u:"https://www.amazon.com.br/Geladeira-Inteligente-BRE66AK-Litros-Brastemp/dp/B0GL3B4FZ8"},
+ {s:"Brastemp (loja oficial)",c:"inox",p:4559.05,t:"Pix · 15% off",u:"https://www.brastemp.com.br/geladeira-inteligente-b--smart-brastemp-frost-free-inverse-500-litros-cor-inox-bre66ak/p"},
+ {s:"Compra Certa",c:"black",p:4638.99,t:"Pix · BRE66AE · 20% off",u:"https://www.compracerta.com.br/geladeira-inteligente-b--smart-brastemp-frost-free-inverse-500-litros-cor-black-inox---bre66ae-20128656/p"},
+ {s:"Telerio",c:"inox",p:4749.90,t:"Pix · BRE66AK",u:"https://www.telerio.com.br/geladeira-inteligente-brastemp-b-smart-frost-free-inverse-500l-inox-bre66ak-bivolt/p"},
+ {s:"Magazine Luiza",c:"inox",p:4799.00,t:"Pix · BRE66AK",u:"https://www.magazineluiza.com.br/busca/geladeira+brastemp+500+litros+inverse/"},
+ {s:"Ponto",c:"inox",p:4899.99,t:"BRE66AK · até 10x sem juros",u:"https://www.pontofrio.com.br/geladeira-brastemp-inverse/b"},
+ {s:"Ponto",c:"black",p:4899.99,t:"BRE66AE · até 10x sem juros",u:"https://www.pontofrio.com.br/geladeira-brastemp-inverse/b"},
+ {s:"Magazine Luiza",c:"black",p:5789.00,t:"Preço no cartão · BRE66AE",u:"https://www.magazineluiza.com.br/busca/geladeira+brastemp+500+litros+inverse/"}
+];
+var f="all",$=function(i){return document.getElementById(i)};
+function brl(v){return v.toLocaleString("pt-BR",{style:"currency",currency:"BRL"})}
+function q(c){return "https://www.google.com/search?tbm=shop&q="+encodeURIComponent("Geladeira Inteligente B= Smart Brastemp Frost Free Inverse 500 Litros "+c)}
+$("g1").href=q("Inox BRE66AK");$("g2").href=q("Black Inox BRE66AE");
+function render(){
+  var inc=$("out").checked;
+  var r=DATA.filter(function(d){return (f==="all"||d.c===f)&&(inc||!d.o)}).sort(function(a,b){return a.p-b.p});
+  var b=$("best");
+  if(r.length){var x=r[0];
+    b.innerHTML='<div class="m">Menor preço encontrado</div><div class="pr">'+brl(x.p)+'</div><div><b>'+x.s+'</b> · '+(x.c==="inox"?"Inox":"Black Inox")+'</div><div style="margin-top:10px"><a class="btn pri" target="_blank" rel="noopener" href="'+x.u+'">Ir para a loja</a></div>';
+  } else b.textContent="Nenhum resultado.";
+  $("list").innerHTML=r.map(function(d,i){
+    return '<div class="row"><div><b>'+d.s+'</b> '+(i===0?'<span class="tag" style="background:var(--okbg);color:var(--ok)">menor</span>':'')+
+    '<div><span class="tag">'+(d.c==="inox"?"Inox":"Black Inox")+'</span>'+(d.o?'<span class="tag w2">outlet/CNPJ</span>':'')+'</div><div class="m">'+d.t+'</div></div>'+
+    '<div><div class="p">'+brl(d.p)+'</div><div style="text-align:right;margin-top:6px"><a target="_blank" rel="noopener" href="'+d.u+'">Ver oferta →</a></div></div></div>';
+  }).join("");
+}
+document.querySelectorAll(".tabs button").forEach(function(bt){bt.onclick=function(){
+  f=bt.dataset.f;document.querySelectorAll(".tabs button").forEach(function(x){x.setAttribute("aria-pressed",x===bt)});render()}});
+$("out").onchange=render;
+function dur(ms){var m=Math.max(0,Math.floor(ms/60000));if(m<60)return m+" min";var h=Math.floor(m/60);if(h<48)return h+" h";return Math.floor(h/24)+" dias"}
+function tick(){var a=Date.now()-CHECKED;$("age").textContent=dur(a);
+  var n=6*3600000-a;$("next").textContent=n>0?dur(n):"agora — clique em Buscar no Google";}
+tick();setInterval(tick,30000);
+// Tema
+function setT(t){document.documentElement.setAttribute("data-theme",t);$("th").textContent=t==="dark"?"☀️ Claro":"🌙 Escuro";try{localStorage.setItem("tema",t)}catch(e){}}
+var st=null;try{st=localStorage.getItem("tema")}catch(e){}
+if(!st)st=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";
+setT(st);
+$("th").onclick=function(){setT(document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark")};
+render();
+</script>
+</body>
+</html>
